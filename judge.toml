@@ -1,0 +1,7 @@
+[jobs.test]
+
+image = { source = "dockerfile", path = "." }
+
+run = [
+  "cat $input | ./test"
+]
