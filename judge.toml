@@ -1,4 +1,4 @@
-[jobs.test]
+[jobs.test-submit]
 
 image = { source = "dockerfile", path = "." }
 
