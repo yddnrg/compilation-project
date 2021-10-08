@@ -44,7 +44,7 @@ public class MyClass {
                     System.out.println("Number(" + num + ")");
                 } else if (Character.isLowerCase(ch) || Character.isUpperCase(ch) || ch == '_') {
                     StringBuilder sb = new StringBuilder("");
-                    while (i < len && (Character.isLetterOrDigit(string.charAt(i)) || ch == '_')) {
+                    while (i < len && (Character.isLetterOrDigit(string.charAt(i)) || string.charAt(i) == '_')) {
                         ch = string.charAt(i);
                         sb.append(ch);
                         i++;
