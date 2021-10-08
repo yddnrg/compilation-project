@@ -18,7 +18,7 @@ int main()
 {
     init();
     char ch = getchar();
-    while (ch != EOF)
+    while (ch!=EOF)
     {
         if (isdigit(ch))
         {
@@ -67,7 +67,7 @@ int main()
             cout << iter->second << endl;
             ch = getchar();
         }
-        else if (ch == ' ' || ch == '\n' || ch == '\t')
+        else if (isspace(ch))
         {
             ch = getchar();
         }
@@ -80,22 +80,23 @@ int main()
 }
 void init()
 {
-    print_map["if"] = "If";
-    print_map["else"] = "Else";
-    print_map["while"] = "While";
-    print_map["break"] = "Break";
-    print_map["continue"] = "Continue";
-    print_map["return"] = "Return";
-    print_map[";"] = "Semicolon";
-    print_map["("] = "LPar";
-    print_map[")"] = "RPar";
-    print_map["{"] = "LBrace";
-    print_map["}"] = "RBrace";
-    print_map["+"] = "Plus";
-    print_map["*"] = "Mult";
-    print_map["/"] = "Div";
-    print_map["<"] = "Lt";
-    print_map[">"] = "Gt";
+    print_map["if"]="If";
+    print_map["else"]="Else";
+    print_map["while"]="While";
+    print_map["break"]="Break";
+    print_map["continue"]="Continue";
+    print_map["return"]="Return";
+    print_map[";"]="Semicolon";
+    print_map["("]="LPar";
+    print_map[")"]="RPar";
+    print_map["{"]="LBrace";
+    print_map["}"]="RBrace";
+    print_map["+"]="Plus";
+    print_map["*"]="Mult";
+    print_map["/"]="Div";
+    print_map["<"]="Lt";
+    print_map[">"]="Gt";
+
 }
 int is_in_map(char *s, int is_char)
 {
