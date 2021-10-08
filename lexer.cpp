@@ -67,7 +67,7 @@ int main()
             cout << iter->second << endl;
             ch = getchar();
         }
-        else if (ch == ' ' || ch == '\n' || ch == '\t')
+        else if (ch == ' ' || ch == '\n' || ch == '\t' || ch=='\r')
         {
             ch = getchar();
         }
