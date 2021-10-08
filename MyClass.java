@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lexer {
+public class MyClass {
     public static Map<String, String> printMap = new HashMap<String, String>();
 
     public static void initMap() {
