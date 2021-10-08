@@ -33,13 +33,13 @@ public class MyClass {
             for (int i = 0; i < len; i++) {
                 Character ch = string.charAt(i);
                 if (Character.isDigit(ch)) {
-                    int num = 0;
+                    StringBuilder sb = new StringBuilder("");
                     while (i < len && Character.isDigit(string.charAt(i))) {
                         ch = string.charAt(i);
-                        num *= 10;
-                        num += (ch - '0');
+                        sb.append(ch);
                         i++;
                     }
+                    String num=sb.toString();
                     i--;
                     System.out.println("Number(" + num + ")");
                 } else if (Character.isLowerCase(ch) || Character.isUpperCase(ch) || ch == '_') {
